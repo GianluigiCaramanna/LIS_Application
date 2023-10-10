@@ -1,8 +1,3 @@
-/*
- * Created by ishaanjav
- * github.com/ishaanjav
- */
-
 package app.ij.LIS_Application;
 
 import androidx.annotation.Nullable;
