@@ -33,10 +33,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     Button camera, gallery, clear, delete;
     ImageView imageView;
-    TextView result;
+    TextView result,frase,confidence;
     String myText;
     ArrayList doPhrase = new ArrayList();
-    TextView frase;
     int imageSize = 200;
 
     @Override
@@ -50,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         delete = findViewById(R.id.button4);
 
         result = findViewById(R.id.result);
+        confidence = findViewById(R.id.resultAccuracy);
         frase = findViewById(R.id.frase);
         imageView = findViewById(R.id.imageView);
 
@@ -103,8 +103,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void deleteItem() {
-        doPhrase.remove(doPhrase.size() -1);
-        composePhrase();
+        if(doPhrase.size() !=0 ) {
+            doPhrase.remove(doPhrase.size() -1);
+            composePhrase();
+        }
+
     }
 
 
@@ -153,6 +156,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             String classes = getStringFromFile();
             String[] tokens = classes.split("\n");
             doPhrase.add(tokens[maxPos]);
+            confidence.setText(Float.toString(maxConfidence));
             result.setText(tokens[maxPos]);
             composePhrase();
 

@@ -59,8 +59,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:text="Classified as:"
+        android:layout_marginLeft="40sp"
         android:textStyle="bold"
         android:textSize="20sp"
         android:id="@+id/classified"
@@ -70,12 +70,37 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:text="Accuracy:"
+        android:layout_marginLeft="250sp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/accuracy"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="10sp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text=""
+        android:layout_marginLeft="40sp"
         android:textColor="#C30000"
         android:textStyle="bold"
         android:textSize="27sp"
         android:id="@+id/result"
+        android:layout_below="@+id/classified"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="250sp"
+        android:textColor="#C30000"
+        android:textStyle="bold"
+        android:textSize="27sp"
+        android:id="@+id/resultAccuracy"
         android:layout_below="@+id/classified"
         />
 
