@@ -70,8 +70,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Accuracy:"
-        android:layout_marginLeft="250sp"
+        android:text="switch AI:"
+        android:layout_marginLeft="200sp"
         android:textStyle="bold"
         android:textSize="20sp"
         android:id="@+id/accuracy"
@@ -92,15 +92,15 @@
         android:layout_below="@+id/classified"
         />
 
-    <TextView
+    <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
-        android:layout_marginLeft="250sp"
-        android:textColor="#C30000"
-        android:textStyle="bold"
-        android:textSize="27sp"
-        android:id="@+id/resultAccuracy"
+        android:layout_marginLeft="200sp"
+        android:checked="true"
+        android:textStyle="normal"
+        android:textSize="20dp"
+        android:text="alphabet ASL"
+        android:id="@+id/switch_IA"
         android:layout_below="@+id/classified"
         />
 

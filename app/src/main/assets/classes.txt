@@ -7,7 +7,6 @@ F
 G
 H
 I
-J
 K
 L
 M
@@ -24,5 +23,3 @@ W
 X
 Y
 Z
-nothing
-space
