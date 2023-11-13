@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LIS_Application</string>
+    <string name="Page1">Welcome to LIS_Application</string>
+    <string name="Go">GO TO APP</string>
 </resources>
